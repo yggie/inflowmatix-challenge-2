@@ -1,0 +1,40 @@
+@import "../_variables/_colors";
+@import "../_variables/_layout";
+
+.header {
+  color: var(--colors--inverted-primary-text);
+  padding: var(--layout--large-space) 0 var(--layout--large-space) 0;
+  background-color: var(--colors--inverted-background);
+
+  & a {
+    color: var(--colors--inverted-primary-text);
+  }
+}
+
+.page-title {
+  margin: 0;
+}
+
+.nav-group {
+  display: flex;
+  margin: 0 0 var(--layout--large-space) 0;
+  flex-direction: row;
+}
+
+.nav-list {
+  flex: 1;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
+  & > li {
+    text-transform: lowercase;
+
+    & + li {
+      margin-left: var(--layout--medium-space);
+    }
+  }
+}
