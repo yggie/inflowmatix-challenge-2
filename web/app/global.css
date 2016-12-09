@@ -1,0 +1,28 @@
+@import "./_variables/_colors";
+@import "./_variables/_typography.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  color: var(--colors--primary-text);
+  font-family: var(--typography--body-font-family);
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--colors--dark-primary);
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
